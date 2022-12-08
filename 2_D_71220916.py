@@ -1,39 +1,15 @@
-## TEST CASE 1
-print("Table Matematika Nich")
-print("Pilihan Model Matematika")
-print("1. Perkalian")
-print("2. Pembagian")
-print("Masukan model matematika yang diinginkan 1/2 : 1")
+print("Pilihan model Matematika\n========================")
+print('\n1. Perkalian')
+print('2. Pembagian\n========================')
 
-bilangan = int(input("Menampilkan tabel matematika dari angka :"))
-for i in range(1,11) : 
-   hasil = bilangan * i
-   print(bilangan, "x", i, "=", hasil )
-  
+menu = int(input("Masukkan model matematika yang diinginkan (1/2) : "))
+table = int(input('Menampilkan table matematika dari angka:'))
 
-
-
-
-## TEST CASE 2
-# print("Table Matematika Nich")
-# print("Pilihan Model Matematika")
-# print("1. Perkalian")
-# print("2. Pembagian")
-# print("Masukan model matematika yang diinginkan 1/2 : 1")
-
-# bilangan = int(input("Menampilkan tabel matematika dari angka :"))
-# for i in range
-
-
-
-
-# ## TEST CASE 3
-# print("Table Matematika Nich")
-# print("Pilihan Model Matematika")
-# print("1. Perkalian")
-# print("2. Pembagian")
-# print("Masukan model matematika yang diinginkan 1/2 : 3")
-# print("Menampilkan table matematika dengan angka : 2")
-# print("Pilihan tidak tersedia, jangan ngasal!")
-
-
+if menu == 1:
+    for i in range(1,11):
+        print(f'{table} x {i} = {table*i}')
+elif menu == 2:
+    for i in range(50,66):
+        print(f'{i} : {table} = {i/table}')
+else:
+    print('Tidak tersedia')
